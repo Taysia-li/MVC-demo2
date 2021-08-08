@@ -1,0 +1,32 @@
+#app2{
+
+}
+
+#app2 .tab-bar{
+    display: flex;
+}
+#app2 .tab-bar > li{
+    border: 1px solid grey;
+    width: 50%;
+}
+
+/*  被选中时变换背景颜色  */
+#app2 .tab-bar > li.selected{
+    background: rgb(216, 183, 152);
+    color: white;
+}
+
+
+#app2 .tab-content{
+
+}
+
+/*  先隐藏列表的内容  */
+#app2 .tab-content > li{
+    display: none;
+}
+
+/*  当对应的tab-bar被选中时，显示对应的内容  */
+#app2 .tab-content > li.active{
+    display: block;
+}
